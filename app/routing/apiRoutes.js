@@ -1,11 +1,43 @@
 // Get data from survey
-var surveyData = require("../data/survey/sur")//finish path?..data/survey/surveyData
+var surveyArray = require("../data/friends");
 
 
 module.exports = function(app) {
-    app.get("/api/survey", function(req, res) {
-        res.json(surveyData);
+    app.get("/api/friends", function(req, res) {
+       return res.json(surveyArray);
       });
+
+app.post("/api/friends", function(req, res) {
+// the compatability logic
+// take user survey question results 
+var formInput = req.body;
+var friendScore = formInput.scores;
+console.log(req.body);
+var answers = {
+  name:"",
+  photo:"",
+  diff:1000
+};
+
+for (i = 0; i < surveyArray.length; i++) {
+  var currentDiff = 0;
+  for(var x = 0; x < surveyArray[i].scores.length; x++) {
+    currentDiff += Math.abs(parseInt(surveyArray[i].scores[x]- parseInt(friendScore[x])))
+  } if (currentDiff < answers.diff) {
+    answers.name = surveyArray.name;
+    answers.photo = surveyArray.photo;
+    answers.diff = currentDiff;
+  }
+}
+surveyArray.push(formInput);
+res.json(answers);
+ 
+
+});
+
+
+
+
 
 };// end of module.exports function
 

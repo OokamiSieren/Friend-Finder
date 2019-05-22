@@ -8,11 +8,11 @@ var PORT = process.env.PORT || 3000;
  app.use = (express.urlencoded({
     extended: true
 }));
-//  app.use(express.json()); something is wrong with this, getting error
+//   app.use(express.json());  this is giving me an error why?
 
 // require the routes(make sure your path and names are right)
-//require("./routes/apiRoutes")(app);
-//require("./routes/htmlRoutes")(app);
+require("./app/routing/apiRoutes")(app);
+require("./app/routing/htmlRoutes")(app);
 
 
 // listener

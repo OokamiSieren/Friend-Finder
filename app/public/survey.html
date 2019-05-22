@@ -1,141 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Survey Page</title>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Page</title>
 
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron text-center">
+        <h2>Survey Questions</h2>
+        <hr />
+      </div>
+      <h5><strong>About You</strong></h5>
+      <hr />
+      <h5>Name (Required)</h5>
+      <input type="text" id="name" class="form-controlled" />
+      <h5>Link to Photo Image (Required)</h5>
+      <input type="text" id="photo" class="form-controlled" />
+      <hr />
+      <div class="form-group">
+        <h5>Question 1</h5>
+        <h6>blah blah blah?</h6>
+        <select class="survey" id="q1">
+          <option value="1">1 (Strongly Agree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Disagree)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <h5>Question 2</h5>
+        <h6>blah blah blah?</h6>
+        <select class="survey" id="q2">
+          <option value="1">1 (Strongly Agree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Disagree)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <h5>Question 3</h5>
+        <h6>blah blah blah?</h6>
+        <select class="survey" id="q3">
+          <option value="1">1 (Strongly Agree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Disagree)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <h5>Question 4</h5>
+        <h6>blah blah blah?</h6>
+        <select class="survey" id="q4">
+          <option value="1">1 (Strongly Agree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Disagree)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <h5>Question 5</h5>
+        <h6>blah blah blah?</h6>
+        <select class="survey" id="q5">
+          <option value="1">1 (Strongly Agree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Disagree)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <h5>Question 6</h5>
+        <h6>blah blah blah?</h6>
+        <select class="survey" id="q6">
+          <option value="1">1 (Strongly Agree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Disagree)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <h5>Question 7</h5>
+        <h6>blah blah blah?</h6>
+        <select class="survey" id="q7">
+          <option value="1">1 (Strongly Agree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Disagree)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <h5>Question 8</h5>
+        <h6>blah blah blah?</h6>
+        <select class="survey" id="q8">
+          <option value="1">1 (Strongly Agree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Disagree)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <h5>Question 9</h5>
+        <h6>blah blah blah?</h6>
+        <select class="survey" id="q9">
+          <option value="1">1 (Strongly Agree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Disagree)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <h5>Question 10</h5>
+        <h6>blah blah blah?</h6>
+        <select class="survey" id="q10">
+          <option value="1">1 (Strongly Agree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Disagree)</option>
+        </select>
+      </div>
+      <button type="button" class="btn btn-primary" id="submit">Submit</button>
+    </div>
 
-</head>
-<body>
-
-  <div class="container">
-<div class="jumbotron text-center">
-    <h2>Survey Questions</h2>
-    <hr>
-</div>
-    <h5><strong>About You</strong></h5>
-    <hr>
-    <h5>Name (Required)</h5>
-    <input type="text" id="name" class="form-controlled">
-    <h5>Link to Photo Image (Required)</h5>
-    <input type="text" id="photo" class="form-controlled">
-    <hr>
-    <div class="form-group">
-            <h5>Question 1</h5>
-            <h6>blah blah blah?</h6>
-            <select class="survey" id="q1">
-              <option value="1">1 (Strongly Agree)</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5 (Strongly Disagree)</option>
-            </select>
+    <div class="modal" id="display" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Here is your closest match!</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
           </div>
-          <div class="form-group">
-                <h5>Question 2</h5>
-                <h6>blah blah blah?</h6>
-                <select class="survey" id="q2">
-                        <option value="1">1 (Strongly Agree)</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5 (Strongly Disagree)</option>
-                </select>
-              </div>
-              <div class="form-group">
-                    <h5>Question 3</h5>
-                    <h6>blah blah blah?</h6>
-                    <select class="survey" id="q3">
-                            <option value="1">1 (Strongly Agree)</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5 (Strongly Disagree)</option>
-                    </select>
-                  </div>
-                  <div class="form-group">
-                        <h5>Question 4</h5>
-                        <h6>blah blah blah?</h6>
-                        <select class="survey" id="q4">
-                                <option value="1">1 (Strongly Agree)</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5 (Strongly Disagree)</option>
-                        </select>
-                      </div>
-                      <div class="form-group">
-                            <h5>Question 5</h5>
-                            <h6>blah blah blah?</h6>
-                            <select class="survey" id="q5">
-                                    <option value="1">1 (Strongly Agree)</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5 (Strongly Disagree)</option>
-                            </select>
-                          </div>
-                          <div class="form-group">
-                                <h5>Question 6</h5>
-                                <h6>blah blah blah?</h6>
-                                <select class="survey" id="q6">
-                                        <option value="1">1 (Strongly Agree)</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5 (Strongly Disagree)</option>
-                                </select>
-                              </div>
-                              <div class="form-group">
-                                    <h5>Question 7</h5>
-                                    <h6>blah blah blah?</h6>
-                                    <select class="survey" id="q7">
-                                            <option value="1">1 (Strongly Agree)</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                            <option value="4">4</option>
-                                            <option value="5">5 (Strongly Disagree)</option>
-                                    </select>
-                                  </div>
-                                  <div class="form-group">
-                                        <h5>Question 8</h5>
-                                        <h6>blah blah blah?</h6>
-                                        <select class="survey" id="q8">
-                                                <option value="1">1 (Strongly Agree)</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5 (Strongly Disagree)</option>
-                                        </select>
-                                      </div>
-                                      <div class="form-group">
-                                            <h5>Question 9</h5>
-                                            <h6>blah blah blah?</h6>
-                                            <select class="survey" id="q9">
-                                                    <option value="1">1 (Strongly Agree)</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                    <option value="4">4</option>
-                                                    <option value="5">5 (Strongly Disagree)</option>
-                                            </select>
-                                          </div>
-                                          <div class="form-group">
-                                                <h5>Question 10</h5>
-                                                <h6>blah blah blah?</h6>
-                                                <select class="survey" id="q10">
-                                                        <option value="1">1 (Strongly Agree)</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                        <option value="4">4</option>
-                                                        <option value="5">5 (Strongly Disagree)</option>
-                                                </select>
-                                              </div>
-                                                                                                                                                                                              
-          
-
-
-  </div>
+          <div class="modal-body">
+            <h6 id="resName"></h6>
+            <img src="#"id="resImage">
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"
+  ></script>
+  <script type="text/javascript">
+    $("#submit").on("click", function(event) {
+      event.preventDefault();
+      var newFriend = {
+        name: $("#name")
+          .val()
+          .trim(),
+        photo: $("#photo")
+          .val()
+          .trim(),
+        scores:[ $("#q1").val(),
+         $("#q2").val(),
+         $("#q3").val(),
+         $("#q4").val(),
+         $("#q5").val(),
+         $("#q6").val(),
+         $("#q7").val(),
+         $("#q8").val(),
+         $("#q9").val(),
+         $("#q10").val()
+      ]
+      };
+      console.log(newFriend);
+      $.post("/api/friends", newFriend, function(data) {
+        // display name and photo from results
+        $("#resName").text(data.name);
+        $("#resImage").attr("src",data.photo);
+        //display modal        
+        $("#display").modal("toggle");
+        
+      }); //end of post
+    }); // end of on click
+  </script>
+</html>
