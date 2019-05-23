@@ -5,10 +5,11 @@ var path = require("path");
 var app = express();
 var PORT = process.env.PORT || 3000;
 //using express app
- app.use = (express.urlencoded({
+ app.use(express.urlencoded({
     extended: true
 }));
-//   app.use(express.json());  this is giving me an error why?
+
+ app.use(express.json());  
 
 // require the routes(make sure your path and names are right)
 require("./app/routing/apiRoutes")(app);
