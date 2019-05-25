@@ -218,8 +218,9 @@
       console.log(newFriend);
       $.post("/api/friends", newFriend, function(data) {
         // display name and photo from results
+        console.log(data);
         $("#resName").text(data.name);
-        $("#resImage").attr("src",data.photo);
+        $("#resImage").attr("src", data.photo);
         //display modal        
         $("#display").modal("toggle");
         

@@ -19,13 +19,13 @@ var answers = {
   diff:1000
 };
 
-for (i = 0; i < surveyArray.length; i++) {
+for ( var i = 0; i < surveyArray.length; i++) {
   var currentDiff = 0;
   for(var x = 0; x < surveyArray[i].scores.length; x++) {
     currentDiff += Math.abs(parseInt(surveyArray[i].scores[x]- parseInt(friendScore[x])))
   } if (currentDiff < answers.diff) {
-    answers.name = surveyArray.name;
-    answers.photo = surveyArray.photo;
+    answers.name = surveyArray[i].name;
+    answers.photo = surveyArray[i].photo;
     answers.diff = currentDiff;
   }
 }
