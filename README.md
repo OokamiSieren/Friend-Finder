@@ -3,3 +3,5 @@ This application allows you to find new friends by answering a survey. Start wit
 The link to the application is : https://limitless-crag-45220.herokuapp.com/
 
 Here is a link with screenshots: https://drive.google.com/drive/folders/1cmS1EUchEwoA3c4UkhGCOwP0WV2QMmk8?usp=sharing
+
+Technology used Node and Express
